@@ -779,7 +779,6 @@ ul {
 .modal__form-group {
   margin-bottom: 24px;
   position: relative;
-  padding-bottom: 20px;
 }
 
 .modal__form-group label {
@@ -835,7 +834,6 @@ ul {
   font-size: 20px;
   border-radius: 60px;
   cursor: pointer;
-  margin-top: 16px;
 }
 
 @keyframes fadeIn {
