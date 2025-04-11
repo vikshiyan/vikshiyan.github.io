@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT</title>
+    <link rel="icon" href="./images/header/NFT.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body class="page">
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="./images/header/star.svg"
+            alt="star"
+            class="header__icon-star"
+          />
+          <img src="./images/header/NFT.svg" alt="NFT" class="header__nft" />
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Discover</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Collection</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Artist</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__button modal-trigger">Connect to wallet</button>
+      </header>
+
+      <main class="main">
+        <section class="first-block">
+          <div class="first-block__title">
+            <h1>Top nft aroun<span class="one-letter">d</span></h1>
+            <div class="first-block__title-rectangle">
+              <img
+                src="./images/section1/rectangle.svg"
+                alt="rectangle"
+                class="first-block__rectangle"
+              />
+              <h2>the worl<span class="one-letter">d</span></h2>
+            </div>
+          </div>
+          <div class="first-block__button-wrapper">
+            <button class="first-block__button modal-trigger">Explore</button>
+          </div>
+          <div class="first-block__text">
+            <img src="./images/section1/avatars.png" alt="avatars" />
+            <div class="first-block__avatars">
+              <p class="first-block__avatars-text">
+                Over 1.000.000 account active
+              </p>
+              <img src="./images/section1/star-2.svg" alt="star" />
+            </div>
+          </div>
+          <div class="first-block__slider swiper" id="first-block-slider">
+            <div class="swiper-wrapper"></div>
+            <button class="first-block__slider-elements modal-trigger">
+              <p class="first-block__slider-text">Place a bid</p>
+              <img src="./images/section1/arrow-right.svg" alt="arrow-right" />
+            </button>
+          </div>
+          <div class="spotlight-wrapper"><div class="spotlight"></div></div>
+        </section>
+
+        <section class="second-block">
+          <div class="section__header">
+            <p class="section__title">Trending 🔥</p>
+            <div class="second-block__icons">
+              <img
+                src="./images/section2/arrow-left.svg"
+                alt="arrow-left"
+                class="second-block__arrow-prev view-icon"
+              />
+              <img
+                src="./images/section2/arrow-rigth.svg"
+                alt="arrow-right"
+                class="second-block__arrow-next view-icon"
+              />
+            </div>
+
+            <button class="view-button modal-trigger">
+              <p class="view-button__text">VIEW ALL</p>
+              <img
+                src="./images/section2/arrow-rigth.svg"
+                alt="arrow-right"
+                class="view-button__arrow view-icon"
+              />
+            </button>
+          </div>
+
+          <div class="second-block__content swiper" id="second-block-content">
+            <div class="swiper-wrapper"></div>
+            <div class="second-block__icons-mobile">
+              <img
+                src="./images/section2/arrow-left.svg"
+                alt="arrow-left"
+                class="second-block__arrow-prev view-icon"
+              />
+              <img
+                src="./images/section2/arrow-rigth.svg"
+                alt="arrow-right"
+                class="second-block__arrow-next view-icon"
+              />
+            </div>
+          </div>
+
+          <div
+            class="second-block__footer swiper"
+            id="second-block-footer-slider"
+          >
+            <div class="swiper-wrapper"></div>
+          </div>
+        </section>
+
+        <section class="third-block">
+          <div class="section__header">
+            <p class="section__title">Top Artist</p>
+            <button class="view-button modal-trigger">
+              <p class="view-button__text">VIEW ALL</p>
+              <img
+                src="./images/section2/arrow-rigth.svg"
+                alt="arrow-right"
+                class="view-button__arrow view-icon"
+              />
+            </button>
+          </div>
+
+          <div class="third-block__content swiper" id="third-block-slider">
+            <div class="swiper-wrapper"></div>
+          </div>
+        </section>
+
+        <section class="fourth-block">
+          <div class="section__header fourth-block__header-mobile">
+            <p class="section__title">Explore</p>
+            <div class="input__wrapper">
+              <input type="text" placeholder="Search item" class="input" />
+              <button class="input-buton">
+                <img src="./images/section4/search-icon.svg" alt="search" />
+              </button>
+            </div>
+          </div>
+
+          <div class="fourth-block__content">
+            <div class="fourth-block__form">
+              <div class="fourth-block__filter-group">
+                <label for="price" class="fourth-block__label">PRICE</label>
+                <input
+                  type="range"
+                  id="price"
+                  name="price"
+                  class="fourth-block__control fourth-block__range"
+                  min="0.001"
+                  max="10.000"
+                  step="0.001"
+                />
+                <p class="fourth-block__range-values">
+                  <span class="fourth-block__text fourth-block__range-value"
+                    >0.001 ETH</span
+                  >
+                  <span class="fourth-block__text fourth-block__range-value"
+                    >10 ETH</span
+                  >
+                </p>
+              </div>
+
+              <div class="fourth-block__filter-group">
+                <p class="fourth-block__label">STATUS</p>
+                <div class="fourth-block__status-buttons">
+                  <button
+                    class="fourth-block__control fourth-block__status-button"
+                  >
+                    Buy now
+                  </button>
+                  <button
+                    class="fourth-block__control fourth-block__status-button"
+                  >
+                    New
+                  </button>
+                </div>
+              </div>
+
+              <div class="fourth-block__filter-group">
+                <label for="tag" class="fourth-block__label">Tag</label>
+                <input
+                  type="text"
+                  id="tag"
+                  name="tag"
+                  class="fourth-block__control fourth-block__input"
+                  placeholder="search by tag"
+                />
+              </div>
+
+              <div class="fourth-block__filter-group">
+                <label for="category" class="fourth-block__label"
+                  >Category</label
+                >
+                <input
+                  type="text"
+                  id="category"
+                  name="category"
+                  class="fourth-block__control fourth-block__input"
+                  placeholder="search by categories"
+                />
+              </div>
+
+              <button class="fourth-block__control fourth-block__apply-button">
+                Apply
+              </button>
+            </div>
+
+            <div class="fourth-block__cards" id="nft-cards">
+              <div class="fourth-block__card-column fourth-block__card-column1">
+                <img
+                  src="./images/photos/image9.webp"
+                  class="fourth-block__card-image"
+                />
+                <img
+                  src="./images/photos/image10.webp"
+                  class="fourth-block__card-image"
+                />
+              </div>
+              <div class="fourth-block__card-column fourth-block__card-column2">
+                <img
+                  src="./images/photos/image1.webp"
+                  class="fourth-block__card-image"
+                />
+                <img
+                  src="./images/photos/image11.webp"
+                  class="fourth-block__card-image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="fourth-block__load-more">
+            <button
+              class="fourth-block__button fourth-block__text modal-trigger"
+            >
+              Load more
+            </button>
+          </div>
+        </section>
+
+        <section class="fifth-block">
+          <div>
+            <h2 class="fifth-block__title">
+              Top nft around <br />
+              the world
+            </h2>
+            <div class="fifth-block__buttons">
+              <button
+                class="fifth-block__button fifth-block__button-create modal-trigger"
+              >
+                Create item
+              </button>
+              <button
+                class="fifth-block__button fifth-block__button-discover modal-trigger"
+              >
+                Discover more
+              </button>
+            </div>
+          </div>
+
+          <div class="fifth-block__images">
+            <img
+              src="./images/section5/image1.webp"
+              alt="small image"
+              class="fifth-block__image-small"
+            />
+            <img
+              src="./images/section5/image2.webp"
+              alt="big image"
+              class="fifth-block__image-big"
+            />
+          </div>
+        </section>
+
+        <section class="modal" id="nft-modal">
+          <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h2 class="modal__title">Contact Us for More NFTs</h2>
+
+            <form id="contact-form" class="modal__form">
+              <div class="modal__form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="modal__input" />
+                <span class="modal__error-text" id="name-error"></span>
+              </div>
+
+              <div class="modal__form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  class="modal__input"
+                />
+                <span class="modal__error-text" id="lastName-error"></span>
+              </div>
+
+              <div class="modal__form-group">
+                <label for="mail">Email</label>
+                <input
+                  type="email"
+                  id="mail"
+                  name="mail"
+                  class="modal__input"
+                />
+                <span class="modal__error-text" id="mail-error"></span>
+              </div>
+
+              <div class="modal__form-group">
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="modal__input"
+                />
+                <span class="modal__error-text" id="phone-error"></span>
+              </div>
+
+              <div class="modal__form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="modal__input modal__textarea"
+                ></textarea>
+                <span class="modal__error-text" id="message-error"></span>
+              </div>
+
+              <div class="modal__button-wrapper">
+                <button type="submit" class="modal__submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <h3 class="footer__title">
+          Discover a rare abstract item around the world
+        </h3>
+
+        <div class="footer__content">
+          <div class="footer__section">
+            <h4 class="footer__heading">Pages</h4>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">How it works</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Community</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Upload</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Connect to Wallet</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__section">
+            <h4 class="footer__heading">Info</h4>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Download</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Support</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Donate</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__heading">Join Newsletter</h4>
+          <p class="footer__text">
+            Subscribe our newsletter to get more amazing NFTs item
+          </p>
+          <div class="footer__input-wrapper">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="footer__input"
+            />
+            <button class="footer__input-button">
+              <img
+                src="./images/footer/chevron-right.svg"
+                alt="chevron-right"
+              />
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

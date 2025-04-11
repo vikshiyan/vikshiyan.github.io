@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Misto";
+  src: url("../fonts/Misto/Misto.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist/Urbanist-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maragsa";
+  src: url("../fonts/Maragsa/Maragsa%20Display%20400.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Raleway Regular (400) */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-v4020-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Raleway Medium (500) */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-v4020-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Raleway SemiBold (600) */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-v4020-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Raleway Bold (700) */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-v4020-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Raleway ExtraBold (800) */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-v4020-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Raleway Black (900) */
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-v4020-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
